@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACP Media Links</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Mono&display=swap');
+
+    :root {
+      --red: #E74C3C;
+      --blue: #1A2B5B;
+      --gray: #333333;
+      --light: #F5F5F5;
+      --white: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--blue);
+      color: var(--white);
+      min-height: 100vh;
+      padding: 48px 24px;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      opacity: 0.6;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-decoration: none;
+      color: white;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .link-card:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--red);
+    }
+
+    .link-info { flex: 1; }
+
+    .link-name {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .link-url {
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--red);
+      opacity: 0.9;
+    }
+
+    .arrow {
+      font-size: 18px;
+      opacity: 0.4;
+      flex-shrink: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 12px;
+      opacity: 0.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="tag">ACP Media Department</div>
+      <h1>Media Links</h1>
+      <p class="subtitle">Quick access to all shared media assets</p>
+    </header>
+
+    <div class="links">
+      <a class="link-card" href="/announcements">
+        <div class="link-info">
+          <div class="link-name">📢 Announcements</div>
+          <div class="link-url">acp-church-media.github.io/links/announcements</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <!-- ADD NEW LINKS BELOW THIS LINE -->
+    </div>
+
+    <footer>Anglican Church of Pentecost · Stafford, Texas</footer>
+  </div>
+</body>
+</html>
